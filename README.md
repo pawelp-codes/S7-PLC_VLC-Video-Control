@@ -5,14 +5,10 @@
 ---
 
 ## Overview
-
 This project demonstrates real-time control of VLC media player using a Siemens S7-1200 PLC via TCP communication.  
 The Python server receives simple numeric commands from the PLC, executes VLC actions, and sends responses or heartbeat signals back.
 
-
-
 **Features:**
-
 - Start, Stop, Pause, Resume, Reset, Rewind videos
 - Thread-safe VLC control
 - End-of-file notifications to PLC
@@ -21,7 +17,6 @@ The Python server receives simple numeric commands from the PLC, executes VLC ac
 - Auto reconnect on connection loss
 
 ## Command Mapping (PLC → VLC)
-
 | Command | Action               |
 |---------|----------------------|
 | 1       | Start video          |
@@ -31,7 +26,6 @@ The Python server receives simple numeric commands from the PLC, executes VLC ac
 | 5       | Resume video         |
 | 6       | Rewind to 0 sec      |
 | 7       | Rewind to 5 sec      |
-|---------|----------------------|
 
 ## Usage
 
@@ -49,7 +43,6 @@ The Python server receives simple numeric commands from the PLC, executes VLC ac
 ## File structure
 - `python_server/` – Python script controlling VLC
 - `plc_program/` – PLC project files
-
 
 ## Install python-vlc via pip:
 ```bash
